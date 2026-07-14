@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cartographer — Narrative World-Building Tool</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗺</text></svg>" />
+  </head>
+  <body>
+    <div class="welcome">
+      <div class="welcome-hero-wrap">
+        <header class="welcome-header">
+          <a href="/" class="welcome-brand">
+            <div class="logo-mark" aria-hidden="true">
+              <svg viewBox="0 0 18 18" fill="none"><path d="M9 1.5L15.5 5.25V12.75L9 16.5L2.5 12.75V5.25L9 1.5Z" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <div>
+              <div class="brand-title">Cartographer</div>
+              <div class="brand-subtitle">Narrative World-Building Tool</div>
+            </div>
+          </a>
+          <div class="welcome-actions">
+            <a href="/sign-in.html" class="btn btn-outline">Sign In</a>
+            <a href="/create-account.html" class="btn btn-primary">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Create Account
+            </a>
+          </div>
+        </header>
+
+        <main class="welcome-main">
+          <section class="welcome-copy">
+            <h1>Every world<br />begins with<br />a <em>story.</em></h1>
+            <p class="lead">Build characters, kingdoms, timelines and legends within a living, interconnected narrative universe.</p>
+            <div class="welcome-ctas">
+              <a href="/world-creation.html" class="btn btn-primary btn-lg">
+                <span style="display:flex;align-items:center;gap:12px">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M9 5v8M5 9h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  Create New World
+                </span>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M7 4l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </a>
+              <a href="/world-graph.html" class="btn btn-outline btn-lg">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="10" y="10" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M8 5h2M5 8v2M13 8v2M8 13h2" stroke="currentColor" stroke-width="1.5"/></svg>
+                Open Existing World
+              </a>
+              <a href="/world-graph.html" class="welcome-demo">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M8 2v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Explore Demo World
+              </a>
+            </div>
+            <div class="welcome-trust">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1.5L3 4.5v5c0 3.5 2.5 6 6 7.5 3.5-1.5 6-4 6-7.5v-5L9 1.5z" stroke="currentColor" stroke-width="1.5"/></svg>
+              <div>
+                <strong>Your stories are safe with us</strong>
+                <span>Encrypted · Private · Always Yours</span>
+              </div>
+            </div>
+          </section>
+
+          <aside class="graph-preview" aria-label="World graph preview">
+            <div class="graph-preview-card">
+              <div class="graph-preview-inner">
+                <nav class="graph-sidebar" aria-label="Tool navigation">
+                  <svg class="nav-icon" width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="1.5"/></svg>
+                  <div class="nav-active"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" stroke="white" stroke-width="1.5"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="white" stroke-width="1.5"/></svg></div>
+                  <svg class="nav-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 15l6-12 6 12H3z" stroke="currentColor" stroke-width="1.5"/></svg>
+                  <svg class="nav-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="4" width="14" height="10" rx="1" stroke="currentColor" stroke-width="1.5"/></svg>
+                  <svg class="nav-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2v14M2 9h14" stroke="currentColor" stroke-width="1.5"/></svg>
+                  <svg class="nav-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.5"/></svg>
+                  <img class="avatar-sm" src="/images/user-avatar-56586a.png" alt="User" width="32" height="32" />
+                </nav>
+                <div class="graph-canvas">
+                  <svg class="graph-lines" viewBox="0 0 640 400" preserveAspectRatio="none">
+                    <line x1="200" y1="70" x2="358" y2="62" />
+                    <line x1="430" y1="95" x2="450" y2="155" />
+                    <line x1="165" y1="95" x2="165" y2="165" />
+                    <line x1="165" y1="210" x2="340" y2="210" />
+                    <line x1="165" y1="240" x2="165" y2="320" />
+                    <line x1="355" y1="240" x2="355" y2="320" />
+                    <line x1="450" y1="240" x2="450" y2="320" />
+                  </svg>
+                  <span class="relation-label l-heir">Heir to</span>
+                  <span class="relation-label l-rules">Rules</span>
+                  <span class="relation-label l-friend">Childhood Friend</span>
+                  <span class="relation-label l-protects">Protects</span>
+                  <span class="relation-label l-conflict">In Conflict</span>
+                  <span class="relation-label l-competes">Competes</span>
+                  <span class="relation-label l-foreshadows">Foreshadows</span>
+
+                  <div class="entity-card pos-aric">
+                    <img src="/images/aric-veyron-56586a.png" alt="Aric Veyron" width="40" height="40" />
+                    <div><div class="name">Aric Veyron</div><div class="type">Character</div></div>
+                  </div>
+                  <div class="entity-card pos-throne">
+                    <img src="/images/iron-throne-56586a.png" alt="The Iron Throne" width="40" height="40" />
+                    <div><div class="name">The Iron Throne</div><div class="type">Location</div></div>
+                  </div>
+                  <div class="entity-card pos-lysa">
+                    <img src="/images/lysa-card-56586a.png" alt="Lysa Marwen" width="40" height="40" />
+                    <div><div class="name">Lysa Marwen</div><div class="type">Character</div></div>
+                  </div>
+                  <div class="entity-card pos-eldenor">
+                    <img src="/images/eldenor-card-56586a.png" alt="Eldenor" width="40" height="40" />
+                    <div><div class="name">Eldenor</div><div class="type">Kingdom</div></div>
+                  </div>
+                  <div class="entity-card pos-northwatch">
+                    <img src="/images/aric-graph-56586a.png" alt="The Northwatch" width="40" height="40" />
+                    <div><div class="name">The Northwatch</div><div class="type">Faction</div></div>
+                  </div>
+                  <div class="entity-card pos-war">
+                    <img src="/images/lysa-56586a.png" alt="The Shadow War" width="40" height="40" />
+                    <div><div class="name">The Shadow War</div><div class="type">Event</div></div>
+                  </div>
+                  <div class="entity-card pos-prophecy">
+                    <img src="/images/eldenor-56586a.png" alt="Ancient Prophecy" width="40" height="40" />
+                    <div><div class="name">Ancient Prophecy</div><div class="type">Lore</div></div>
+                  </div>
+                  <div class="graph-placeholder pos-add1">+ +</div>
+                  <div class="graph-placeholder pos-add2">+</div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </main>
+      </div>
+
+      <footer class="welcome-footer">
+        <div class="welcome-footer-item">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>
+          Visual World Graph
+        </div>
+        <div class="welcome-footer-item">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 4h12M2 8h8M2 12h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Timeline Builder
+        </div>
+        <div class="welcome-footer-item">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
+          Rich Entity Editor
+        </div>
+        <div class="welcome-footer-item">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 12V6l4-3 4 3v6H4z" stroke="currentColor" stroke-width="1.5"/></svg>
+          Export Writer's Bible
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/nav.js"></script>
+  </body>
+</html>

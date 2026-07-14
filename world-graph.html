@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Graph — The Kingdom of Eldoria</title>
+  </head>
+  <body class="world-graph-page">
+    <div class="app-layout">
+      <!-- Universal Sidebar -->
+      <aside class="app-sidebar">
+        <div class="logo-area">
+          <a href="/">
+            <div class="logo-mark" style="width:28px;height:28px;border-color:var(--page-cream);color:var(--page-cream);margin-right:8px" aria-hidden="true">
+              <svg viewBox="0 0 18 18" fill="none" style="width:14px;height:14px"><path d="M9 1.5L15.5 5.25V12.75L9 16.5L2.5 12.75V5.25L9 1.5Z" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <div>
+              <div class="logo-text">Cartographer</div>
+              <div class="logo-tag">Narrative Worldbuilding</div>
+            </div>
+          </a>
+        </div>
+        <nav class="sidebar-nav">
+          <a class="sidebar-nav-item" href="/world-graph.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+            World Graph
+          </a>
+          <a class="sidebar-nav-item" href="/entity-editor.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+            Entity Editor
+          </a>
+          <a class="sidebar-nav-item" href="/timeline.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            Timeline
+          </a>
+          <a class="sidebar-nav-item" href="/discovery.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            Search & Discovery
+          </a>
+          <a class="sidebar-nav-item" href="/lore.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5v-15z"></path></svg>
+            Lore Details
+          </a>
+          <a class="sidebar-nav-item" href="/analytics.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line><line x1="2" y1="20" x2="22" y2="20"></line></svg>
+            Analytics
+          </a>
+          <a class="sidebar-nav-item" href="/export.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Export Bible
+          </a>
+        </nav>
+        <div class="section-label">World Summary</div>
+        <div class="sidebar-summary">
+          <div class="total">127</div>
+          <div class="total-label">Total Entities</div>
+          <div style="margin-top:12px">
+            <div class="summary-row"><span>Characters</span><span>43</span></div>
+            <div class="summary-row"><span>Locations</span><span>28</span></div>
+            <div class="summary-row"><span>Factions</span><span>19</span></div>
+          </div>
+          <a href="/analytics.html" class="summary-link">View Analytics →</a>
+        </div>
+        <div style="margin-top:auto;padding:16px;border-top:1px solid rgba(255,255,255,0.08)">
+          <a class="sidebar-nav-item" href="/settings.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            Settings
+          </a>
+        </div>
+      </aside>
+
+      <div class="app-main">
+        <header class="app-topbar">
+          <div class="topbar-brand">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2L20 7v10l-8 5-8-5V7l8-5z" stroke="#1a1a18" stroke-width="1.5"/></svg>
+            <span class="topbar-brand__title">The Kingdom of Eldoria</span>
+          </div>
+          <div class="search-bar">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="6" cy="6" r="4.5" stroke="currentColor"/><path d="M9.5 9.5L12 12" stroke="currentColor" stroke-linecap="round"/></svg>
+            <input type="search" placeholder="Search characters, locations, events, factions..." />
+            <span class="kbd">⌘ K</span>
+          </div>
+          <div class="filter-tabs">
+            <a href="#" class="active">All</a>
+            <a href="#">Characters</a>
+            <a href="#">Locations</a>
+            <a href="#">Factions</a>
+            <a href="#">Artifacts</a>
+            <a href="#">Events</a>
+          </div>
+          <div class="topbar-actions">
+            <button type="button" class="btn btn-primary btn-sm">Export</button>
+            <div class="user-avatar" aria-label="User account">A</div>
+          </div>
+        </header>
+
+        <div class="wg-body">
+          <div class="wg-canvas-wrap">
+            <div class="wg-canvas">
+              <svg class="relations" viewBox="0 0 1068 800" preserveAspectRatio="xMidYMid meet">
+                <path d="M300 280 Q400 220 500 250" stroke="#5a7a8a" stroke-width="1.5" fill="none" opacity="0.45"/>
+                <path d="M500 240 Q580 200 650 280" stroke="#5a7a5a" stroke-width="1.5" fill="none" opacity="0.45"/>
+                <path d="M400 380 Q480 340 520 300" stroke="#8b4a6b" stroke-width="1.5" fill="none" opacity="0.45"/>
+                <path d="M280 420 Q350 380 400 350" stroke="#6a5a8a" stroke-width="1.5" fill="none" opacity="0.45"/>
+                <path d="M350 480 Q420 450 500 420" stroke="#8a4a3a" stroke-width="1.5" fill="none" opacity="0.45"/>
+                <path d="M500 480 Q550 440 600 400" stroke="#6a7a4a" stroke-width="1.5" fill="none" opacity="0.45"/>
+              </svg>
+
+              <div class="graph-node" style="left:395px;top:214px">
+                <img class="avatar avatar-lg" src="/images/eldenor-56586a.png" alt="Eldenor" style="border-color:#8b4a6b;border-width:2px" />
+                <div class="label">Eldenor</div>
+                <div class="sublabel" style="color:var(--cannon-pink)">Kingdom</div>
+              </div>
+              <div class="graph-node" style="left:209px;top:90px">
+                <img class="avatar" src="/images/aric-graph-56586a.png" alt="Aric Veyron" />
+                <div class="label">Aric Veyron</div>
+                <div class="sublabel" style="color:var(--wedgewood)">Knight Commander</div>
+              </div>
+              <div class="graph-node" style="left:585px;top:82px">
+                <img class="avatar" src="/images/lysa-56586a.png" alt="Lysa Marwen" />
+                <div class="label">Lysa Marwen</div>
+                <div class="sublabel" style="color:var(--wedgewood)">Court Mage</div>
+              </div>
+              <div class="graph-node" style="left:146px;top:260px">
+                <img class="avatar" src="/images/aric-graph-56586a.png" alt="Northwatch" />
+                <div class="label">Northwatch</div>
+                <div class="sublabel" style="color:var(--dingley)">Fortress City</div>
+              </div>
+              <div class="graph-node" style="left:604px;top:270px">
+                <img class="avatar" src="/images/eldenor-56586a.png" alt="Ancient Crown" />
+                <div class="label">Ancient Crown</div>
+                <div class="sublabel" style="color:var(--victoria)">Artifact</div>
+              </div>
+              <div class="graph-node" style="left:346px;top:410px">
+                <img class="avatar" src="/images/lysa-56586a.png" alt="The Shadow War" />
+                <div class="label">The Shadow War</div>
+                <div class="sublabel" style="color:var(--copper-rust)">Historic Event</div>
+              </div>
+              <div class="graph-node" style="left:509px;top:404px">
+                <img class="avatar" src="/images/iron-throne-56586a.png" alt="Iron Throne" />
+                <div class="label">Iron Throne</div>
+                <div class="sublabel" style="color:var(--sycamore)">Faction</div>
+              </div>
+              <div class="graph-node" style="left:206px;top:390px">
+                <img class="avatar" src="/images/aric-veyron-56586a.png" alt="House Duvain" />
+                <div class="label">House Duvain</div>
+                <div class="sublabel" style="color:var(--sycamore)">Noble House</div>
+              </div>
+            </div>
+
+            <div class="wg-controls">
+              <button aria-label="Zoom in">+</button>
+              <button aria-label="Zoom out">−</button>
+              <button aria-label="Fit view">⊡</button>
+            </div>
+
+            <div class="wg-minimap">
+              <div class="wg-minimap-header"><span>Mini Map</span><span>↗</span></div>
+              <div class="wg-minimap-body"></div>
+            </div>
+          </div>
+
+          <aside class="wg-panel">
+            <div class="wg-panel-header">
+              <div class="wg-panel-type">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1l6 3.5v7L8 15 2 11.5v-7L8 1z" stroke="currentColor"/></svg>
+                Kingdom
+              </div>
+              <h2>Eldenor Kingdom</h2>
+              <p class="wg-panel-desc">The heart of the known world — a realm of ancient magic and political intrigue spanning three continents.</p>
+            </div>
+            <div class="wg-panel-banner">
+              <img src="/images/kingdom-banner-4a93cc.png" alt="Eldenor landscape" />
+            </div>
+            <div class="wg-stats-grid">
+              <div class="wg-stat-box"><div class="label">Population</div><div class="value">4.2M</div></div>
+              <div class="wg-stat-box"><div class="label">Regions</div><div class="value">12</div></div>
+              <div class="wg-stat-box"><div class="label">Characters</div><div class="value">63</div></div>
+              <div class="wg-stat-box"><div class="label">Events</div><div class="value">247</div></div>
+            </div>
+            <div style="padding:16px">
+              <a href="/entity-editor.html" class="btn btn-primary btn-sm btn-block">View Kingdom Details</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <script type="module">
+      import './src/styles/base.css';
+      import './src/styles/components.css';
+      import './src/styles/world-graph.css';
+      import './src/nav.js';
+    </script>
+  </body>
+</html>

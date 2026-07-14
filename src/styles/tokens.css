@@ -1,0 +1,92 @@
+:root {
+  /* Welcome / primary palette */
+  --green-white: #f0f4ec;
+  --green-kelp: #1a2e1a;
+  --green-kelp-75: rgba(26, 46, 26, 0.75);
+  --xanadu: #6b7d6b;
+  --card-bg: #f5f7f2;
+  --tasman: #d4ddd0;
+  --tasman-60: rgba(212, 221, 208, 0.6);
+  --everglade: #1e4d2b;
+  --accent-green: #7aab6e;
+  --canvas-muted: #e8ede4;
+  --white: #ffffff;
+  --laser: #c9a86a;
+
+  /* App shell palette */
+  --spring-wood: #faf9f6;
+  --bianca: #fdfcf8;
+  --westar: #e2ddd6;
+  --pampas: #f0ede7;
+  --log-cabin: #1a1a18;
+  --granite-green: #8a8578;
+  --pablo: #7a7468;
+  --cod-gray: #1a1a1a;
+  --killarney: #3d6b52;
+  --zeus: #1c1a16;
+  --cement: #8a7b62;
+  --tobacco-brown: #6a5c4a;
+
+  /* Entity editor dark sidebar */
+  --sidebar-dark: #183a2d;
+  --page-cream: #f8f7f2;
+
+  /* World creation dark */
+  --racing-green: #080f0c;
+
+  /* Timeline arc colors */
+  --stromboli: #8b4513;
+  --old-brick: #8b2500;
+  --chalet-green: #4a6741;
+  --cosmic: #6b4c8a;
+  --shadow: #4a3728;
+  --wheatfield: #f5f0e1;
+
+  /* Entity type colors */
+  --cannon-pink: #8b4a6b;
+  --wedgewood: #5a7a8a;
+  --dingley: #5a7a5a;
+  --victoria: #6a5a8a;
+  --copper-rust: #8a4a3a;
+  --sycamore: #6a7a4a;
+
+  /* Typography */
+  --font-serif: 'PT Serif', Georgia, serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-dm: 'DM Sans', system-ui, sans-serif;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-card: 0 1px 2px -1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 2px 8px -2px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 8px 32px -4px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 4px 12px -2px rgba(0, 0, 0, 0.1), 0 8px 24px -4px rgba(0, 0, 0, 0.08);
+  --shadow-focus: 0 0 0 3px rgba(30, 77, 43, 0.2);
+  --shadow-focus-gold: 0 0 0 3px rgba(201, 168, 106, 0.3);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.35s ease;
+
+  /* Radii */
+  --radius-sm: 10px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* Breakpoints (for reference in media queries) */
+  --bp-sm: 480px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1200px;
+
+  /* Layout */
+  --sidebar-width: 260px;
+  --topbar-height: 56px;
+  --content-max: 960px;
+  --page-gutter: clamp(16px, 4vw, 40px);
+}

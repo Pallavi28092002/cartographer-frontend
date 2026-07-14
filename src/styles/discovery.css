@@ -1,0 +1,312 @@
+.discovery-page {
+  min-height: 100vh;
+  background: var(--spring-wood);
+}
+
+.discovery-layout {
+  max-width: 1056px;
+  margin: 0 auto;
+  padding: 32px var(--page-gutter) 64px;
+  width: 100%;
+}
+
+.discovery-header {
+  margin-bottom: 32px;
+  animation: slideUp 0.4s ease both;
+}
+
+.discovery-header .breadcrumb {
+  font-family: var(--font-dm);
+  font-size: 11px;
+  color: var(--cement);
+  margin-bottom: 8px;
+}
+
+.discovery-header h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(26px, 5vw, 44px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--zeus);
+  margin-bottom: 12px;
+}
+
+.discovery-header p {
+  font-family: var(--font-dm);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--cement);
+  max-width: 640px;
+}
+
+/* ── Search ── */
+.discovery-search-wrap {
+  margin-bottom: 32px;
+  animation: slideUp 0.4s ease 0.1s both;
+}
+
+.discovery-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  background: var(--white);
+  border: 1px solid var(--westar);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  transition: border-color var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+.discovery-search:focus-within {
+  border-color: var(--everglade);
+  box-shadow: var(--shadow-focus);
+}
+
+.discovery-search input {
+  flex: 1;
+  border: none;
+  font-family: var(--font-dm);
+  font-size: 15px;
+  outline: none;
+  color: var(--zeus);
+}
+
+.discovery-search input::placeholder {
+  color: var(--cement);
+}
+
+/* ── Columns ── */
+.discovery-columns {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 32px;
+}
+
+/* ── Sidebar Links ── */
+.discovery-sidebar h4 {
+  font-family: var(--font-dm);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cement);
+  margin-bottom: 12px;
+}
+
+.discovery-link {
+  display: block;
+  padding: 8px 0;
+  font-family: var(--font-dm);
+  font-size: 13px;
+  color: var(--tobacco-brown);
+  transition: color var(--transition-fast),
+              padding-left var(--transition-fast);
+}
+
+.discovery-link:hover {
+  color: var(--everglade);
+  padding-left: 4px;
+}
+
+.discovery-link span {
+  color: var(--cement);
+}
+
+/* ── Stats Grid ── */
+.discovery-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-bottom: 32px;
+  animation: slideUp 0.4s ease 0.15s both;
+}
+
+.discovery-stat {
+  padding: 20px;
+  background: var(--white);
+  border: 1px solid var(--westar);
+  border-radius: var(--radius-lg);
+  transition: box-shadow var(--transition-base),
+              transform var(--transition-base),
+              border-color var(--transition-base);
+}
+
+.discovery-stat:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  border-color: var(--everglade);
+}
+
+.discovery-stat .num {
+  font-family: var(--font-serif);
+  font-size: 32px;
+  line-height: 1.1;
+  color: var(--zeus);
+}
+
+.discovery-stat .lbl {
+  font-family: var(--font-dm);
+  font-size: 12px;
+  color: var(--cement);
+  margin-top: 4px;
+}
+
+/* ── Section Headers ── */
+.discovery-section h2 {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  color: var(--zeus);
+  margin-bottom: 16px;
+}
+
+/* ── Discovery Cards ── */
+.discovery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.discovery-card {
+  background: var(--white);
+  border: 1px solid var(--westar);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: box-shadow var(--transition-base),
+              transform var(--transition-base),
+              border-color var(--transition-base);
+}
+
+.discovery-card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-3px);
+  border-color: var(--everglade);
+}
+
+.discovery-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  transition: transform var(--transition-slow);
+}
+
+.discovery-card:hover img {
+  transform: scale(1.05);
+}
+
+.discovery-card .body {
+  padding: 14px 16px;
+}
+
+.discovery-card .type {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cement);
+  margin-bottom: 4px;
+}
+
+.discovery-card .name {
+  font-family: var(--font-dm);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--zeus);
+}
+
+/* ── Insights Grid ── */
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.insight-card {
+  padding: 16px;
+  background: var(--white);
+  border: 1px solid var(--westar);
+  border-radius: var(--radius-md);
+  transition: box-shadow var(--transition-base),
+              transform var(--transition-base);
+}
+
+.insight-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.insight-card .label {
+  font-family: var(--font-dm);
+  font-size: 12px;
+  color: var(--cement);
+  margin-bottom: 8px;
+}
+
+.insight-card .entity {
+  font-family: var(--font-dm);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--zeus);
+  margin-bottom: 4px;
+}
+
+.insight-card .detail {
+  font-size: 12px;
+  color: var(--laser);
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .discovery-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .discovery-sidebar {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .discovery-sidebar h4 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .discovery-layout {
+    padding: 24px var(--page-gutter) 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .discovery-layout {
+    padding: 20px 16px 32px;
+  }
+
+  .discovery-stat {
+    padding: 14px;
+  }
+
+  .discovery-stat .num {
+    font-size: 24px;
+  }
+
+  .discovery-search {
+    padding: 12px 14px;
+  }
+
+  .discovery-search input {
+    font-size: 14px;
+    min-width: 0;
+  }
+
+  .discovery-card img {
+    height: 110px;
+  }
+
+  .discovery-section h2 {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aric Veyron — Entity Editor</title>
+    <script type="module" crossorigin src="/assets/components-CF9NXYT0.js"></script>
+    <script type="module" crossorigin src="/assets/nav-CH41B9s9.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/components-C_eyxXLi.css">
+    <link rel="stylesheet" crossorigin href="/assets/entity-editor-CzPE18Kt.css">
+  </head>
+  <body class="entity-editor-page">
+    <div class="app-layout">
+      <!-- Universal Sidebar -->
+      <aside class="app-sidebar">
+        <div class="logo-area">
+          <a href="/">
+            <div class="logo-mark" style="width:28px;height:28px;border-color:var(--page-cream);color:var(--page-cream);margin-right:8px" aria-hidden="true">
+              <svg viewBox="0 0 18 18" fill="none" style="width:14px;height:14px"><path d="M9 1.5L15.5 5.25V12.75L9 16.5L2.5 12.75V5.25L9 1.5Z" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <div>
+              <div class="logo-text">Cartographer</div>
+              <div class="logo-tag">Narrative Worldbuilding</div>
+            </div>
+          </a>
+        </div>
+        <nav class="sidebar-nav">
+          <a class="sidebar-nav-item" href="/world-graph.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+            World Graph
+          </a>
+          <a class="sidebar-nav-item" href="/entity-editor.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+            Entity Editor
+          </a>
+          <a class="sidebar-nav-item" href="/timeline.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            Timeline
+          </a>
+          <a class="sidebar-nav-item" href="/discovery.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            Search & Discovery
+          </a>
+          <a class="sidebar-nav-item" href="/lore.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5v-15z"></path></svg>
+            Lore Details
+          </a>
+          <a class="sidebar-nav-item" href="/analytics.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line><line x1="2" y1="20" x2="22" y2="20"></line></svg>
+            Analytics
+          </a>
+          <a class="sidebar-nav-item" href="/export.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Export Bible
+          </a>
+        </nav>
+        <div class="section-label">World Summary</div>
+        <div class="sidebar-summary">
+          <div class="total">127</div>
+          <div class="total-label">Total Entities</div>
+          <div style="margin-top:12px">
+            <div class="summary-row"><span>Characters</span><span>43</span></div>
+            <div class="summary-row"><span>Locations</span><span>28</span></div>
+            <div class="summary-row"><span>Factions</span><span>19</span></div>
+          </div>
+          <a href="/analytics.html" class="summary-link">View Analytics →</a>
+        </div>
+        <div style="margin-top:auto;padding:16px;border-top:1px solid rgba(255,255,255,0.08)">
+          <a class="sidebar-nav-item" href="/settings.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            Settings
+          </a>
+        </div>
+      </aside>
+
+      <div class="app-main">
+        <div class="ee-toolbar">
+          <span style="font-size:14px;font-weight:500;color:var(--sidebar-dark)">Edit Entity</span>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-outline" style="padding:6px 14px;font-size:13px">Share</button>
+            <button class="btn btn-primary" style="padding:6px 14px;font-size:13px;background:var(--sidebar-dark)">Save</button>
+          </div>
+        </div>
+
+        <section class="ee-hero">
+          <div class="ee-portrait-wrap">
+            <img class="ee-portrait" src="/images/aric-portrait-2438b4.png" alt="Aric Veyron portrait" />
+            <div class="ee-age-badge"><div class="num">34</div><div class="lbl">Age</div></div>
+          </div>
+          <div class="ee-hero-content">
+            <h1>Aric<br />Veyron</h1>
+            <p class="title">King of Eldenor</p>
+            <p class="bio">A visionary ruler whose decisions shaped the future of the kingdom. Known for his wisdom, courage, and unwavering belief in unity.</p>
+            <div class="ee-tags">
+              <span class="ee-tag">Human</span>
+              <span class="ee-tag">Ruler</span>
+              <span class="ee-tag">Strategist</span>
+              <span class="ee-tag">Noble</span>
+            </div>
+            <div class="ee-meta-grid">
+              <div class="ee-meta-item"><div class="label">Status</div><div class="value">Alive</div></div>
+              <div class="ee-meta-item"><div class="label">Age</div><div class="value">34 Years</div></div>
+              <div class="ee-meta-item"><div class="label">Faction</div><div class="value">House Veyron</div></div>
+              <div class="ee-meta-item"><div class="label">First Seen</div><div class="value">The Rise of Eldoria</div></div>
+            </div>
+          </div>
+        </section>
+
+        <nav class="ee-tabs">
+          <a class="ee-tab active" href="#">Overview</a>
+          <a class="ee-tab" href="#">Relationships</a>
+          <a class="ee-tab" href="/timeline.html">Timeline</a>
+          <a class="ee-tab" href="/lore.html">Lore</a>
+        </nav>
+
+        <div class="ee-content">
+          <section class="ee-relationships">
+            <h3>Key Relationships</h3>
+            <a class="ee-rel-card" href="/entity-editor.html">
+              <img src="/images/lysa-card-56586a.png" alt="" width="40" height="40" />
+              <div><div class="name" style="font-weight:500;font-size:14px">Lysa Marwen</div><div class="rel-type">Childhood Friend · Protects</div></div>
+            </a>
+            <a class="ee-rel-card" href="#">
+              <img src="/images/eldenor-card-56586a.png" alt="" width="40" height="40" />
+              <div><div class="name" style="font-weight:500;font-size:14px">Kingdom of Eldenor</div><div class="rel-type">Heir To · Rules Over</div></div>
+            </a>
+            <a class="ee-rel-card" href="#">
+              <img src="/images/iron-throne-56586a.png" alt="" width="40" height="40" />
+              <div><div class="name" style="font-weight:500;font-size:14px">The Iron Throne</div><div class="rel-type">Rules Over</div></div>
+            </a>
+            <a class="ee-rel-card" href="#">
+              <img src="/images/aric-graph-56586a.png" alt="" width="40" height="40" />
+              <div><div class="name" style="font-weight:500;font-size:14px">House Duvain</div><div class="rel-type">Rival Of · In Conflict</div></div>
+            </a>
+          </section>
+          <aside class="ee-aside-card">
+            <img src="/images/aric-veyron-56586a.png" alt="Aric Veyron" />
+            <div class="body">
+              <div style="font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:var(--pablo);margin-bottom:4px">Kingdom</div>
+              <div style="font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--sidebar-dark)">Eldenor</div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

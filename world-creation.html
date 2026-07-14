@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Your World — Cartographer</title>
+  </head>
+  <body class="world-creation">
+    <div class="world-creation-bg">
+      <div class="world-creation-layout">
+        <aside class="wc-sidebar">
+          <div class="brand">CARTOGRAPHER</div>
+          <div class="subtitle">WORLD CREATION</div>
+          <h2>Your Creative<br /><em>Journey</em></h2>
+          <ol class="wc-steps">
+            <li class="wc-step active"><span class="num">01</span> World Name <span class="status">Currently editing</span></li>
+            <li class="wc-step"><span class="num">02</span> Genre Selection</li>
+            <li class="wc-step"><span class="num">03</span> Story Tone</li>
+            <li class="wc-step"><span class="num">04</span> Seed Characters</li>
+            <li class="wc-step"><span class="num">05</span> Generate World</li>
+          </ol>
+          <p class="wc-quote">"Every great world begins with a single name."</p>
+          <p class="wc-quote-author">— J.R.R. Tolkien</p>
+        </aside>
+        <main class="wc-main">
+          <span class="wc-badge">Begin Your Creation</span>
+          <h1>Create Your World</h1>
+          <p class="intro">Build the foundation of your narrative universe through a guided creative journey. Every choice shapes what comes next.</p>
+
+          <section class="wc-section">
+            <div class="wc-section-header">
+              <span class="wc-section-num active">1</span>
+              <h3>Name Your World</h3>
+            </div>
+            <input class="wc-input" type="text" value="The Kingdom of Eldoria" readonly />
+            <p class="wc-hint">Choose a memorable name that defines your world — it will echo through every story you write.</p>
+          </section>
+
+          <section class="wc-section">
+            <div class="wc-section-header">
+              <span class="wc-section-num">2</span>
+              <h3>Choose Your Genre</h3>
+            </div>
+            <div class="genre-grid">
+              <div class="genre-card selected"><h4>Fantasy</h4><p>Magic, myth & ancient kingdoms</p></div>
+              <div class="genre-card"><h4>Sci-Fi</h4><p>Stars, tech & future civilizations</p></div>
+              <div class="genre-card"><h4>Historical</h4><p>Real eras, reimagined epics</p></div>
+              <div class="genre-card"><h4>Mystery</h4><p>Dark secrets, hidden truths</p></div>
+              <div class="genre-card"><h4>Adventure</h4><p>Journeys across wild frontiers</p></div>
+              <div class="genre-card"><h4>Horror</h4><p>Shadows, dread & the unknown</p></div>
+            </div>
+          </section>
+
+          <section class="wc-section">
+            <div class="wc-section-header">
+              <span class="wc-section-num">3</span>
+              <h3>Set Your Story Tone</h3>
+            </div>
+            <p class="wc-hint">Define the emotional atmosphere — epic, dark, whimsical, or grounded.</p>
+          </section>
+
+          <div class="wc-actions">
+            <a href="/" class="btn btn-ghost">Back</a>
+            <a href="/world-graph.html" class="btn btn-gold">Continue to World Graph →</a>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script type="module">
+      import './src/styles/base.css';
+      import './src/styles/components.css';
+      import './src/styles/world-creation.css';
+      import './src/nav.js';
+    </script>
+  </body>
+</html>
